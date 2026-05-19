@@ -75,7 +75,7 @@ For options **1–4**, you get a short countdown (~10 seconds) to focus the targ
 ### Example session
 
 ```text
-$ python main.py --model gemini-3.5
+$ python main.py --model gemini-3.5-preview
 
 Desktop screen agents
 =====================
