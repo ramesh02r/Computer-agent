@@ -48,7 +48,6 @@ Desktop screen agents
   2  extract_text   — extract visible text (scroll if needed)
   3  next_action    — next click/scroll step for your task
   4  table_rows     — highlight table rows matching a filter (scroll if needed)
-  5  vlm (auto)     — pick the right agent from your query automatically
   q  quit
 """
 
@@ -62,7 +61,7 @@ def _read_query(prompt: str = "Enter your query: ") -> str:
 
 
 def _read_choice() -> str:
-    return input("Select option [1-5, q]: ").strip().lower()
+    return input("Select option [1-4, q]: ").strip().lower()
 
 
 
