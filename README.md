@@ -38,17 +38,17 @@ GEMINI_API_KEY=your_api_key_here
 
 | Use case | Recommended model |
 |----------|-------------------|
-| **General use (best quality)** | **`gemini-3.5`** — preferred for clearer reasoning and better outputs on find-coordinates, extract-text, and vision tasks |
+| **General use (best quality)** | **`gemini-3-flash-preview`** — preferred for clearer reasoning and better outputs on find-coordinates, extract-text, and vision tasks |
 | **Native computer-use tools** | `gemini-2.5-computer-use-preview-10-2025` — use when you need Gemini’s built-in `computer_use` tool (options 3 and 4 with tool calling) |
 
-**Recommendation:** pass **`--model gemini-3.5`** for most queries. If an agent fails or you need strict computer-use tool behavior, switch to the computer-use preview model above.
+**Recommendation:** pass **`--model gemini-3-flash-preview`** for most queries. If an agent fails or you need strict computer-use tool behavior, switch to the computer-use preview model above.
 
 ## How to run
 
 From the `Computer-agent` directory (with the virtual environment activated):
 
 ```bash
-python main.py --model gemini-3.5-preview
+python main.py --model gemini-3-flash-preview
 ```
 
 Example with the computer-use preview model:
@@ -75,7 +75,7 @@ For options **1–4**, you get a short countdown (~10 seconds) to focus the targ
 ### Example session
 
 ```text
-$ python main.py --model gemini-3.5-preview
+$ python main.py --model gemini-3-flash-preview
 
 Desktop screen agents
 =====================
@@ -92,7 +92,7 @@ Outputs (marked images, JSON, etc.) are written under `Computer-agent/` (e.g. `t
 
 - **`Set GEMINI_API_KEY...`** — Create `.env` at the repo root or export the variable in your shell.
 - **Blank or wrong screen** — Focus the correct window during the countdown; check Screen Recording permission.
-- **Model not found** — Confirm the model id in [Gemini models documentation](https://ai.google.dev/gemini-api/docs/models); use `gemini-3.5` or the computer-use preview id exactly as listed in the API.
+- **Model not found** — Confirm the model id in [Gemini models documentation](https://ai.google.dev/gemini-api/docs/models); use `gemini-3-falsh-preview` or the computer-use preview id exactly as listed in the API.
 
 ## Project layout
 
